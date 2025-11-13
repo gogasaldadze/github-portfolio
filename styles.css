@@ -72,6 +72,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 20px;
+    position: relative;
 }
 
 .nav-brand {
@@ -81,6 +82,38 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-primary);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .nav-links {
@@ -1243,9 +1276,43 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
     .nav-links {
-        gap: 1rem;
-        font-size: 0.9rem;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--bg-primary);
+        flex-direction: column;
+        padding: 5rem 2rem 2rem;
+        gap: 1.5rem;
+        box-shadow: -2px 0 10px var(--shadow-lg);
+        transition: right 0.3s ease;
+        z-index: 1000;
+        border-left: 1px solid var(--border);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 0.75rem 0;
+        font-size: 1.1rem;
+    }
+
+    .theme-toggle {
+        margin-left: auto;
+        margin-right: 1rem;
     }
 
     .name {
@@ -1302,11 +1369,8 @@ section {
     }
 }
 
-@media (max-width: 480px) {
-    .nav-links {
-        display: none;
-    }
 
+@media (max-width: 480px) {
     .name {
         font-size: 2rem;
     }
@@ -1318,6 +1382,10 @@ section {
 
     .btn {
         justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
     }
 }
 

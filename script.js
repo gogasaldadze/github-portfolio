@@ -66,8 +66,8 @@ const REPO_TECH_STACKS = {
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = themeToggle.querySelector('.theme-icon');
 
-// Check for saved theme preference or default to light mode
-const currentTheme = localStorage.getItem('theme') || 'light';
+// Check for saved theme preference or default to dark mode
+const currentTheme = localStorage.getItem('theme') || 'dark';
 document.documentElement.setAttribute('data-theme', currentTheme);
 updateThemeIcon(currentTheme);
 
@@ -81,6 +81,33 @@ themeToggle.addEventListener('click', () => {
 
 function updateThemeIcon(theme) {
     themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+}
+
+// Mobile menu toggle
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (mobileMenuToggle && navLinks) {
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!navLinks.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+            mobileMenuToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
 }
 
 // Smooth scroll for navigation links
