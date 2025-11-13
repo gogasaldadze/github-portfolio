@@ -17,6 +17,9 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -38,7 +41,7 @@
                     <span class="greeting">Hello, I'm</span>
                     <span class="name" id="name">Giorgi Saldadze</span>
                 </h1>
-                <p class="hero-subtitle" id="bio">Software Engineer</p>
+                <p class="hero-subtitle" id="bio">Software Engineer • 27 years old</p>
                 <div class="hero-links">
                     <a href="https://github.com/gogasaldadze" target="_blank" class="btn btn-primary">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -68,35 +71,264 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p id="aboutText">Passionate Software Engineer with expertise in building scalable applications and solving complex problems.</p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <div class="stat-number" id="repoCount">10</div>
-                            <div class="stat-label">Repositories</div>
+                <div class="about-main">
+                    <div class="about-text">
+                        <h3>My Story</h3>
+                        <div class="about-description">
+                            <p>My journey into programming started when I was just a kid. My cousin was a developer, and I remember watching him code and being completely fascinated. He let me get my hands dirty early on, and that's when I first fell in love with technology. Those early experiences sparked something in me that would shape my entire career path.</p>
+                            
+                            <p>But it wasn't until <strong>2022</strong> that I became really enthusiastic about programming. That's when I decided to dive deep and make this my career. I started learning Python, exploring web development, and building my first projects. The more I learned, the more I wanted to learn.</p>
+                            
+                            <p>In <strong>Spring 2024</strong>, I got the opportunity to do an internship at Ilia State University. We were developing an internal system for the university, and it was my first real taste of working on a meaningful project in a team environment. That experience taught me so much about collaboration, problem-solving, and building real-world applications that people actually use.</p>
+                            
+                            <p>Then in <strong>July to August 2025</strong>, I did another internship at LeverX, where I worked alongside experienced developers. This was a game-changer for me. I got to work on real projects, learn from professionals, and see how a development team operates in a professional setting. The mentorship and hands-on experience I gained there was invaluable.</p>
+                            
+                            <p>Today, I'm a Software Engineer and Data Analyst with 3 years of hands-on experience. Python is my first love, and I've been building with Flask and Django REST Framework, creating APIs and web applications. Currently, I'm working as a Data Analyst at ALLSTARSIT, specializing in data annotation for autonomous driving software. What really gets me going? <strong>Data</strong>. Everything about it fascinates me - how we collect it, process it, analyze it, and turn it into something meaningful. I've worked with PostgreSQL, MySQL, SQL Server, and SQLite, and I love building data pipelines and finding patterns that matter.</p>
+                            
+                            <p>The best part of this journey? I'm never done learning. Every project teaches me something new, and that constant growth is what keeps me going every single day.</p>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="starCount">2</div>
-                            <div class="stat-label">Stars</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="followersCount">-</div>
-                            <div class="stat-label">Followers</div>
+                    </div>
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon">📦</div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="repoCount">10</div>
+                                <div class="stat-label">Public Repositories</div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="achievements">
-                    <h3>Achievements</h3>
-                    <div class="achievement-badges">
-                        <div class="badge">
-                            <span class="badge-icon">🎯</span>
-                            <span class="badge-text">Quickdraw</span>
+                    <h3>Certifications & Diplomas</h3>
+                    <div class="diploma-list">
+                        <div class="diploma-item">
+                            <div class="diploma-image-container">
+                                <img src="diplomas/image2.png" alt="Python Development Course Certificate" class="diploma-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="diploma-fallback" style="display: none;">
+                                    <div class="diploma-icon">🎓</div>
+                                    <div class="diploma-content">
+                                        <div class="diploma-title">Python Development Course</div>
+                                        <div class="diploma-issuer">LeverX & LEVEL UP PEOPLE</div>
+                                        <div class="diploma-date">Jul 2025 - Aug 2025</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="badge">
-                            <span class="badge-icon">🦈</span>
-                            <span class="badge-text">Pull Shark</span>
+                        <div class="diploma-item">
+                            <div class="diploma-image-container">
+                                <img src="diplomas/image.png" alt="Unilab Python Certificate" class="diploma-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="diploma-fallback" style="display: none;">
+                                    <div class="diploma-icon">🎓</div>
+                                    <div class="diploma-content">
+                                        <div class="diploma-title">Professional Acceleration Program - Python</div>
+                                        <div class="diploma-issuer">Ilia State University - Unilab</div>
+                                        <div class="diploma-date">Spring 2024</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="languages">
+                    <h3>Languages</h3>
+                    <div class="language-list">
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <span class="language-level">Fluent</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Georgian</span>
+                            <span class="language-level">Native</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Russian</span>
+                            <span class="language-level">Moderate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-header">
+                        <div class="education-title">
+                            <h3>Master of Technology</h3>
+                            <span class="education-institution">Business and Technology University (BTU)</span>
+                        </div>
+                        <div class="education-date">Oct 2022 - Present</div>
+                    </div>
+                    <div class="education-location">Tbilisi, Georgia</div>
+                    <p class="education-description">Currently pursuing a Master's degree in Technology, focusing on modern software development practices, automation, and cloud technologies.</p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <div class="education-title">
+                            <h3>Bachelor's Degree, Faculty of Law</h3>
+                            <span class="education-institution">Tbilisi State University</span>
+                        </div>
+                        <div class="education-date">Sep 2017 - Sep 2021</div>
+                    </div>
+                    <div class="education-location">Tbilisi, Georgia</div>
+                    <p class="education-description">Completed Bachelor's degree in Law, providing a strong foundation in analytical thinking and problem-solving skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+            
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        Programming Languages
+                    </h3>
+                    <div class="skills-grid">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <path d="M9 9h6v6H9z"/>
+                        </svg>
+                        Web Frameworks
+                    </h3>
+                    <div class="skills-grid">
+                        <span class="skill-badge">Flask</span>
+                        <span class="skill-badge">FastAPI</span>
+                        <span class="skill-badge">Flask-Smorest</span>
+                        <span class="skill-badge">Django</span>
+                        <span class="skill-badge">Django REST Framework</span>
+                        <span class="skill-badge">Bootstrap</span>
+                        <span class="skill-badge">Jinja</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                        Databases
+                    </h3>
+                    <div class="skills-grid">
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">SQLite</span>
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                        Tools & Technologies
+                    </h3>
+                    <div class="skills-grid">
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Celery</span>
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Postman</span>
+                        <span class="skill-badge">Insomnia</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                        Concepts & Protocols
+                    </h3>
+                    <div class="skills-grid">
+                        <span class="skill-badge">Web Development</span>
+                        <span class="skill-badge">OOP</span>
+                        <span class="skill-badge">SOLID Principles</span>
+                        <span class="skill-badge">REST</span>
+                        <span class="skill-badge">HTTP Protocol</span>
+                        <span class="skill-badge">JWT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Data Analyst</h3>
+                            <span class="experience-company">ALLSTARSIT</span>
+                        </div>
+                        <div class="experience-date">Jul 2024 - Present</div>
+                    </div>
+                    <div class="experience-location">Tbilisi, Georgia</div>
+                    <p class="experience-description">Data Annotation Specialist at Imagry | Mapless AI-Based Autonomous Driving Software. Working with cutting-edge AI technology to annotate and process data for autonomous vehicle systems.</p>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Software Engineer Intern</h3>
+                            <span class="experience-company">LeverX</span>
+                        </div>
+                        <div class="experience-date">Jun 2025 - Sep 2025</div>
+                    </div>
+                    <div class="experience-location">Tbilisi, Georgia</div>
+                    <p class="experience-description">Gained hands-on experience with Django REST Framework (DRF) for building scalable APIs. Collaborated with a team of engineers on enterprise-level software development projects.</p>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Software Engineer Intern</h3>
+                            <span class="experience-company">UniLab</span>
+                        </div>
+                        <div class="experience-date">Mar 2024 - Jul 2024</div>
+                    </div>
+                    <div class="experience-location">Tbilisi, Georgia</div>
+                    <p class="experience-description">Contributed to back-end development with Python and Flask. Worked on building robust web applications and learning best practices in software engineering.</p>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Senior Content Moderator</h3>
+                            <span class="experience-company">Teleperformance</span>
+                        </div>
+                        <div class="experience-date">Mar 2021 - Jun 2023</div>
+                    </div>
+                    <div class="experience-location">Tbilisi, Georgia</div>
+                    <p class="experience-description">Led content moderation efforts, ensuring platform safety and quality standards. Developed strong attention to detail and data monitoring skills.</p>
                 </div>
             </div>
         </div>
@@ -106,6 +338,7 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 2rem;">My pinned and featured projects</p>
             <div class="projects-grid" id="projectsGrid">
                 <div class="project-card skeleton">
                     <div class="skeleton-header"></div>
@@ -144,6 +377,19 @@
                     </svg>
                     <span>LinkedIn</span>
                 </a>
+                <a href="mailto:saldadzegoga@gmail.com" class="contact-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <span>saldadzegoga@gmail.com</span>
+                </a>
+                <a href="tel:+995598609901" class="contact-link">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>+995 598 60 99 01</span>
+                </a>
             </div>
         </div>
     </section>
@@ -151,7 +397,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Giorgi Saldadze. Built with ❤️ for GitHub Pages</p>
+            <p>&copy; 2025 Giorgi Saldadze</p>
         </div>
     </footer>
 
