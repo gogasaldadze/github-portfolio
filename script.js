@@ -8,7 +8,8 @@ const PINNED_REPOS = [
     'BP',
     'JSON-reader-using-python-SQL-',
     'UnilabInternalSystem',
-    'Semver-REGEX'
+    'Semver-REGEX',
+    'Telegram-Bot'
 ];
 
 // Custom descriptions for repositories
@@ -18,7 +19,8 @@ const REPO_DESCRIPTIONS = {
     'JSON-reader-using-python-SQL-': 'A Python application for reading and processing JSON data with SQL database integration. Features database creation, data reading and inserting, query execution for analysis, CLI commands, and SOLID principles implementation. Handles data processing, database management, and follows clean code architecture.',
     'UnilabInternalSystem': 'Group project developed during my internship - An internal system for Ilia State University (Unilab). Built with Python and Flask, featuring database initialization, authentication, and internal management features. This collaborative project involved teamwork, Flask development, and working with SQLite databases.',
     'Semver-REGEX': 'A Python utility for semantic versioning validation using regular expressions. Checks if version strings follow the Semantic Versioning specification (MAJOR.MINOR.PATCH format). Uses regex patterns for version validation and Python string processing.',
-    'BP': 'A Django REST Framework project where I rebuilt the BoxSpot e-commerce application using DRF and best practice approaches. This project demonstrates advanced Django REST Framework patterns, proper API architecture, and modern development practices for supplier company management. Features RESTful API endpoints for business operations, data management, and follows industry-standard coding practices.'
+    'BP': 'A Django REST Framework project where I rebuilt the BoxSpot e-commerce application using DRF and best practice approaches. This project demonstrates advanced Django REST Framework patterns, proper API architecture, and modern development practices for supplier company management. Features RESTful API endpoints for business operations, data management, and follows industry-standard coding practices.',
+    'Telegram-Bot': 'This is just for personal use, because each month I forget to pay income tax so this is telegram bot reminder. A FastAPI-based Telegram bot that allows you to set custom reminders and receive them at specified dates and times. Features include setting reminders via Telegram commands or web interface, automatic reminder delivery at scheduled times, and viewing all your reminders.'
 };
 
 // Custom tech stacks for repositories
@@ -59,6 +61,12 @@ const REPO_TECH_STACKS = {
         { name: 'Django REST Framework', color: '#092e20' },
         { name: 'Docker', color: '#2496ed' },
         { name: 'Make', color: '#6e5494' }
+    ],
+    'Telegram-Bot': [
+        { name: 'Python', color: '#3776ab' },
+        { name: 'FastAPI', color: '#009688' },
+        { name: 'SQLite', color: '#003b57' },
+        { name: 'HTML', color: '#e34c26' }
     ]
 };
 
